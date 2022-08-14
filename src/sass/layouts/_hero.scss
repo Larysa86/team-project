@@ -1,0 +1,380 @@
+.header {
+  background-color: var(--bg-color-header);
+}
+
+.header-thumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  padding-top: 8px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 37px;
+  }
+}
+
+.header__logo {
+  height: 50px;
+}
+
+.header__list {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 35px;
+    position: absolute;
+    left: 343px;
+    top: 52px;
+    z-index: 4;
+  }
+}
+
+.header__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #fff;
+
+  transition: color var(--anim);
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+
+// H E R O
+
+.hero {
+  background-color: var(--bg-color-header);
+}
+
+.hero__top-pos {
+  width: 100%;
+  position: relative;
+  padding-top: 136px;
+  padding-bottom: 158px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    overflow: visible;
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.hero__title {
+  position: relative;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+  max-width: 218px;
+  margin-bottom: 20px;
+  z-index: 4;
+
+  @media screen and (min-width: 768px) {
+    max-width: 162px;
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 277px;
+    font-size: 38px;
+    line-height: 1.16;
+  }
+}
+
+.hero__title--accent {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: var(--color-raspberry);
+  z-index: 4;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 90.5%;
+  }
+}
+
+.hero-btn {
+  z-index: 4;
+}
+
+.hero__circle {
+  position: absolute;
+  right: -62px;
+  top: 25px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: var(--text-color-pink);
+
+  @media screen and (min-width: 768px) {
+    left: 248px;
+    top: -39px;
+    width: 335px;
+    height: 333px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 517px;
+    top: -33px;
+    width: 534px;
+    height: 534px;
+  }
+}
+
+.hero__ice-cream {
+  position: absolute;
+  width: 171px;
+  bottom: 0;
+  right: 32px;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    left: 322px;
+    width: 143px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 236px;
+    left: 636px;
+  }
+}
+
+.hero__milk-container {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero__text-container {
+  max-width: 114px;
+  z-index: 3;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 200px;
+  }
+
+  & p {
+    font-family: 'DM Sans';
+    font-size: 8px;
+    line-height: 150%;
+    color: var(--text-color-white);
+    margin-bottom: 7px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.hero-arrow {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+
+  transform: rotate(0deg);
+
+  transition: transform var(--anim);
+
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.stats {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 32px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    top: 65px;
+  }
+}
+
+.stats__cafe-pos {
+  position: relative;
+  padding-top: 2px;
+  padding-right: 10px;
+  margin-bottom: 16px;
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 4px;
+    padding-right: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+.cafe-text {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: var(--text-color-white);
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.cafe-count {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-raspberry);
+  position: relative;
+  z-index: 1;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.stats__trucks-pos {
+  position: relative;
+  padding-top: 2px;
+  padding-right: 10px;
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 4px;
+    padding-right: 16px;
+  }
+}
+
+.cafe-ellips {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 0;
+
+  @media screen and(min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.trucks-text {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: var(--text-color-white);
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.trucks-count {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 31.142px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-raspberry);
+  z-index: 1;
+  position: relative;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.truck-ellips {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 0px;
+
+  @media screen and(min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero__tasty {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    right: 32px;
+  }
+}
+
+details {
+  transition: all var(--anim);
+  max-height: 20px;
+  z-index: 100;
+}
+
+summary {
+  list-style: none;
+}
+
+details[open] .hero-arrow {
+  transform: rotate(90deg);
+}
+
+details[open] {
+  max-height: 500px;
+}

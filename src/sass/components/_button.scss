@@ -1,0 +1,192 @@
+.button {
+  display: block;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 22px;
+
+  transition: color var(--anim), background-color var(--anim);
+
+  &--mode-light {
+    color: var(--color-raspberry);
+    background-color: #ffffff;
+  }
+
+  &--mode-raspberry {
+    color: var(--text-color-white);
+    background-color: var(--color-raspberry);
+  }
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+}
+
+.button__img {
+  margin-left: 10px;
+}
+
+.button__img--light {
+  margin-left: 10px;
+}
+
+.header__button {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding: 11.5px 37px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+}
+
+.header__button--show {
+  display: block;
+  padding: 11.5px 37px;
+  margin: 0 auto;
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+
+  border: none;
+  border-radius: 22px;
+
+  color: #d41443;
+
+  min-width: 210px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.btn-thumb {
+  margin-top: 60px;
+  margin-bottom: 19px;
+}
+
+.hero-btn {
+  padding: 7px 15px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 11px 23px;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.hero__btn-container {
+  display: flex;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+    gap: 12px;
+  }
+}
+
+.about-btn {
+  padding: 11.5px 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  transition: color var(--anim), background-color var(--anim);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+}
+
+.contacts__button {
+  padding: 11.5px 16px;
+
+  border: 0vh;
+
+  @media screen and (min-width: 768px) {
+    padding: 11.5px 35px;
+  }
+  transition: color var(--anim), background-color var(--anim);
+  &:hover,
+  &:focus {
+    background: var(--color-raspberry);
+    color: #ffffff;
+  }
+}
+
+.contacts__button--sec {
+  padding: 11.5px 37px;
+}
+
+// scroll to top button
+
+.back-to-top {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #d41443;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+    z-index: 1000;
+  }
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #ffffff;
+}
+
+.progress-bar {
+  height: 1rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
